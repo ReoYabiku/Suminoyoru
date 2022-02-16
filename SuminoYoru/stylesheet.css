@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*以下コンテンツの情報*/
+
+.contents{
+    background-color: antiquewhite;
+    padding-top: 100px;
+}
+
+.heading p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.writing{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.writing-name{
+    width: 80%;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+.clear{
+    clear: left;
+}
+
+/*以下ヘッダの情報*/
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(70, 36, 5, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.header-top p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.header2{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(20, 27, 95, 0.9);
+    position: fixed;
+    top: 60px;
+    z-index: 10;
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+}
+
+.header2 ul{
+    text-align: center;
+}
+
+.header2 li{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*以下フッタの情報*/
+
+footer{
+    background-color: rgb(70, 36, 5);
+    width: 100%;
+    color: aliceblue;
+}
+
+.footer-logo{
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+}
