@@ -11,9 +11,13 @@ li{
     list-style: none;
 }
 
+*{
+    box-sizing: border-box;
+  }
+
 .container{
-    width: 1170px;
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -21,16 +25,16 @@ li{
 
 .contents{
     background-color: antiquewhite;
-    padding-top: 100px;
+    margin-top: 110px;
 }
 
 .heading p{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    margin: 0 0 30px;
     border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
+    padding: 20px 0 5px;
 }
 
 .writing{
@@ -43,8 +47,11 @@ li{
     width: 80%;
     display: inline-block;
     margin-top: 5px;
+    /*margin-bottom: 50px;*/
     font-size: 15px;
     color: black;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .clear{
@@ -60,13 +67,11 @@ header{
     position: fixed;
     top: 0;
     z-index: 10;
-
-    color: aliceblue;
-    font-size: 20px;
 }
 
 .header-top p{
     font-weight: bold;
+    color: aliceblue;
     font-size: 30px;
     margin: 10px 0;
 }
@@ -105,4 +110,27 @@ footer{
     float: left;
     font-weight: bold;
     font-size: 25px;
+}
+
+/*タブレット用のメディアクエリ*/
+
+@media(max-width: 1000px){
+    .writing{
+        width: 33%;
+    }
+}
+
+/*スマホ用のメディアクエリ*/
+
+@media(max-width: 670px){
+    .writing{
+        width: 50%;
+    }
+}
+
+/*わからんけどもっとちっちゃいやつ*/
+@media(max-width: 450px){
+    .writing{
+        width: 100%;
+    }
 }
