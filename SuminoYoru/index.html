@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <title>SuminoYoru</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="header-top">
-                    <p class="logo">住野よる作品</p>
+                    <p class="logo" href="index.html">住野よる作品</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -28,6 +29,7 @@
             <div class="container">
                 <div class="heading">
                     <p>住野よるの作品一覧</p>
+                    <button id="button">ボタン</button>
                 </div>
                 <div class="writings">
                     <div class="writing">
@@ -54,7 +56,7 @@
                         </a>
                         <p class="writing-name">か「」く「」し「」ご「」と「</p>
                     </div>
-                    <div class="writing">
+                    <div class="writing" id="to"><!-- スクロール先 -->
                         <a class="writing-img" href="aoku.html">
                             <img src="aoku5.jpg">
                         </a>
@@ -89,5 +91,6 @@
             </div>
             <div class="clear"></div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
